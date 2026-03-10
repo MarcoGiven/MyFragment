@@ -19,7 +19,7 @@ class ColorFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_color, container, false).apply {
             setOnClickListener {
                 setBackgroundColor(Color.parseColor(
-                    colorString = arrayOf("Red", "Green", "Magenta", "Grey", "Yellow").random()
+                    arrayOf("Red", "Green", "Magenta", "Grey", "Yellow").random()
                 ))
             }
         }
