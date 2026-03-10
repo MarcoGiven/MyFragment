@@ -17,8 +17,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-
-
+        supportFragmentManager
+            .beginTransaction()
+            .add(R.id.fragmentContainerView2, ColorFragment())
+            .commit()
 
     }
 }
